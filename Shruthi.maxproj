@@ -2,7 +2,7 @@
 	"name" : "Shruthi",
 	"version" : 1,
 	"creationdate" : -867356405,
-	"modificationdate" : -860739819,
+	"modificationdate" : -860660111,
 	"viewrect" : [ 1526.0, 109.0, 300.0, 500.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
@@ -58,5 +58,5 @@
 
 	}
 ,
-	"detailsvisible" : 0
+	"detailsvisible" : 1
 }

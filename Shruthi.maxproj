@@ -2,9 +2,9 @@
 	"name" : "Shruthi",
 	"version" : 1,
 	"creationdate" : -867356405,
-	"modificationdate" : -848997518,
-	"viewrect" : [ 1526.0, 109.0, 300.0, 500.0 ],
-	"autoorganize" : 0,
+	"modificationdate" : -847784254,
+	"viewrect" : [ 1361.0, 179.0, 300.0, 500.0 ],
+	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
 	"autolocalize" : 0,
@@ -44,12 +44,30 @@
 				"kind" : "patcher",
 				"local" : 1
 			}
+,
+			"SavePatch.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "/Users/user/Documents/Max 6 Projects/Shruthi-1-Editor/patchers/SavePatch.maxpat",
+					"projectrelativepath" : "./Shruthi-1-Editor/patchers/SavePatch.maxpat"
+				}
+
+			}
 
 		}
 ,
 		"media" : 		{
 			"shruthi-editor.png" : 			{
 				"kind" : "imagefile",
+				"local" : 1
+			}
+
+		}
+,
+		"code" : 		{
+			"SaveBinaryFile.js" : 			{
+				"kind" : "javascript",
 				"local" : 1
 			}
 

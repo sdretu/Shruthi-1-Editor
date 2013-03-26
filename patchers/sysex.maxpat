@@ -3,11 +3,12 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 6,
-			"minor" : 0,
-			"revision" : 7
+			"minor" : 1,
+			"revision" : 0,
+			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 651.0, 58.0, 732.0, 668.0 ],
+		"rect" : [ 709.0, 317.0, 732.0, 668.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -27,6 +28,17 @@
 		"digest" : "",
 		"tags" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"comment" : "SYSEX Message Received",
+					"id" : "obj-21",
+					"maxclass" : "outlet",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 153.0, 446.0, 25.0, 25.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
@@ -113,19 +125,19 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 374.0, 159.0, 25.0, 25.0 ]
+					"patching_rect" : [ 201.0, 12.0, 25.0, 25.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"comment" : "BANG Patch Transfer",
+					"comment" : "BANG Patch Transfer Request",
 					"id" : "obj-23",
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 252.75, 37.0, 25.0, 25.0 ]
+					"patching_rect" : [ 406.0, 1.0, 25.0, 25.0 ]
 				}
 
 			}
@@ -143,7 +155,7 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "NRPN messages from Patch Transfer message",
 					"id" : "obj-18",
 					"maxclass" : "outlet",
 					"numinlets" : 1,
@@ -161,7 +173,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 449.0, 155.0, 150.0, 20.0 ],
+					"patching_rect" : [ 517.0, 155.0, 150.0, 20.0 ],
 					"text" : "write current patch to 303"
 				}
 
@@ -175,7 +187,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 421.5, 185.0, 272.0, 20.0 ],
+					"patching_rect" : [ 488.5, 182.5, 272.0, 20.0 ],
 					"text" : "sxformat 240 0 32 119 0 2 33 0 0 1 2 14 2 15 247"
 				}
 
@@ -187,7 +199,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 421.5, 155.0, 20.0, 20.0 ]
+					"patching_rect" : [ 488.5, 155.0, 20.0, 20.0 ]
 				}
 
 			}
@@ -200,7 +212,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 426.0, 99.0, 150.0, 20.0 ],
+					"patching_rect" : [ 463.5, 99.0, 150.0, 20.0 ],
 					"text" : "sequence transfer request"
 				}
 
@@ -470,7 +482,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 386.0, 99.0, 20.0, 20.0 ]
+					"patching_rect" : [ 441.5, 99.0, 20.0, 20.0 ]
 				}
 
 			}
@@ -510,7 +522,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 386.0, 126.0, 219.0, 20.0 ],
+					"patching_rect" : [ 441.5, 126.0, 219.0, 20.0 ],
 					"text" : "sxformat 240 0 32 119 0 2 18 0 0 0 247"
 				}
 
@@ -541,6 +553,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-14", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-13", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-13", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -551,6 +572,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-20", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-15", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-21", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-15", 0 ]
@@ -812,15 +842,15 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "sysex_validation.maxpat",
-				"bootpath" : "/Users/user/Documents/Max 6 Projects/Shruthi-1 Editor/patchers",
-				"patcherrelativepath" : "",
+				"bootpath" : "/Users/user/Documents/Max 6 Projects/Shruthi-1-Editor/patchers",
+				"patcherrelativepath" : "./",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "parse_patch_request_payload.maxpat",
-				"bootpath" : "/Users/user/Documents/Max 6 Projects/Shruthi-1 Editor/patchers",
-				"patcherrelativepath" : "",
+				"bootpath" : "/Users/user/Documents/Max 6 Projects/Shruthi-1-Editor/patchers",
+				"patcherrelativepath" : "./",
 				"type" : "JSON",
 				"implicit" : 1
 			}

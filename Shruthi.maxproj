@@ -2,9 +2,9 @@
 	"name" : "Shruthi",
 	"version" : 1,
 	"creationdate" : -867356405,
-	"modificationdate" : -847784254,
+	"modificationdate" : -798973484,
 	"viewrect" : [ 1361.0, 179.0, 300.0, 500.0 ],
-	"autoorganize" : 1,
+	"autoorganize" : 0,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
 	"autolocalize" : 0,
@@ -47,12 +47,7 @@
 ,
 			"SavePatch.maxpat" : 			{
 				"kind" : "patcher",
-				"local" : 1,
-				"singleton" : 				{
-					"bootpath" : "/Users/user/Documents/Max 6 Projects/Shruthi-1-Editor/patchers/SavePatch.maxpat",
-					"projectrelativepath" : "./Shruthi-1-Editor/patchers/SavePatch.maxpat"
-				}
-
+				"local" : 1
 			}
 
 		}
